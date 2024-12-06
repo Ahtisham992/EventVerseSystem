@@ -1,0 +1,377 @@
+C:\Users\zainu\OneDrive\Desktop\EventVerse\bin\Debug\EventVerse.exe
+C:\Users\zainu\OneDrive\Desktop\EventVerse\bin\Debug\EventVerse.exe.config
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.csproj.AssemblyReference.cache
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeRegistrationForm.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.Properties.Resources.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.csproj.GenerateResource.cache
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.csproj.CoreCompileInputs.cache
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.exe
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.pdb
+C:\Users\zainu\OneDrive\Desktop\EventVerse\bin\Debug\EventVerse.pdb
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.Attendeestartup.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.Startup.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeTickets.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.Rate_events_Attendee.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerInterface.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerRegistration.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorManagementOrganizer.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.Admin_interface.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.Feedback_Moderation.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorAndsponsorInterface.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeEventSearch.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerAttendeeMgmt.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorContractAndpayment.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeDownloadEticket.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerEventAnalytics.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeeventDashboard.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminEventManagement.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeLoginForm.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.Attendeemanagepersonal.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorRegistrationAndProfilemgmt.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminReportsAnalysis.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorServicesAndSponsorshipbidding.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerTicketandSales.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminUserManagement.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeTicketCheckIncs.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeManagePersonalInfo.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AttendeeViewpastevents.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerManageEvents.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerUpdateTickets.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerAttendeeFeedback.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerDeleteTicket.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.OrganizerTicketsalesmetrics.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminManageOrganizers.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminManageUsers.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminAddEvents.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminUpdateEventCategories.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.AdminUpdateEvents.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorRegistersponsor.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorRegistration.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorTrackallpayments.resources
+C:\Users\zainu\OneDrive\Desktop\EventVerse\obj\Debug\EventVerse.VendorViewContracts.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.csproj.AssemblyReference.cache
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.exe
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.pdb
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\bin\Debug\Attendeestartup.resx
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\bin\Debug\EventVerse.exe.config
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\bin\Debug\EventVerse.exe
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\bin\Debug\EventVerse.pdb
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminAddEvents.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.Admin_interface.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminManageOrganizers.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminManageUsers.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEventCategories.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEvents.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeManagePersonalInfo.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeTicketCheckIncs.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeViewpastevents.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeFeedback.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeMgmt.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeRegistrationForm.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeTickets.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerManageEvents.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketsalesmetrics.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerUpdateTickets.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorContractAndpayment.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeDownloadEticket.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerEventAnalytics.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeeventDashboard.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminEventManagement.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeEventSearch.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.Feedback_Moderation.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AttendeeLoginForm.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.Attendeemanagepersonal.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerInterface.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerRegistration.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.Properties.Resources.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.Attendeestartup.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.Rate_events_Attendee.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorRegistersponsor.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorRegistrationAndProfilemgmt.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminReportsAnalysis.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorRegistration.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorServicesAndSponsorshipbidding.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.Startup.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketandSales.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.AdminUserManagement.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorAndsponsorInterface.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorManagementOrganizer.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorTrackallpayments.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.VendorViewContracts.resources
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.csproj.GenerateResource.cache
+D:\Software enginner\university\Sem5\DB\Project\22i-2627_22i-2463_22i-2690\22i-2627_22i-2463_22i-2690\ProjectFiles\obj\Debug\EventVerse.csproj.CoreCompileInputs.cache
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.csproj.AssemblyReference.cache
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.exe
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.pdb
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\bin\Debug\Attendeestartup.resx
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\bin\Debug\EventVerse.exe.config
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\bin\Debug\EventVerse.exe
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\bin\Debug\EventVerse.pdb
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminAddEvents.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Admin_interface.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminManageOrganizers.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminManageUsers.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEventCategories.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEvents.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeManagePersonalInfo.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeTicketCheckIncs.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeViewpastevents.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeFeedback.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeMgmt.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeRegistrationForm.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeTickets.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerManageEvents.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketsalesmetrics.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerUpdateTickets.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorContractAndpayment.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeDownloadEticket.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerEventAnalytics.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeeventDashboard.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminEventManagement.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeEventSearch.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Feedback_Moderation.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeLoginForm.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Attendeemanagepersonal.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerInterface.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerRegistration.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Properties.Resources.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Attendeestartup.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Rate_events_Attendee.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorRegistersponsor.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorRegistrationAndProfilemgmt.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminReportsAnalysis.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorRegistration.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorServicesAndSponsorshipbidding.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Startup.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketandSales.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminUserManagement.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorAndsponsorInterface.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorManagementOrganizer.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorTrackallpayments.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorViewContracts.resources
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.csproj.GenerateResource.cache
+C:\Users\zainu\OneDrive\Desktop\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.csproj.CoreCompileInputs.cache
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.csproj.AssemblyReference.cache
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.exe
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.pdb
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\Attendeestartup.resx
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\EventVerse.exe.config
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\EventVerse.exe
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\EventVerse.pdb
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminAddEvents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Admin_interface.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminManageOrganizers.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminManageUsers.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEventCategories.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEvents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeManagePersonalInfo.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeTicketCheckIncs.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeViewpastevents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeFeedback.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeMgmt.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeRegistrationForm.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeTickets.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerManageEvents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketsalesmetrics.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerUpdateTickets.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorContractAndpayment.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeDownloadEticket.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerEventAnalytics.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeeventDashboard.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminEventManagement.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeEventSearch.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Feedback_Moderation.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AttendeeLoginForm.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Attendeemanagepersonal.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerInterface.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerRegistration.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Properties.Resources.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Attendeestartup.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Rate_events_Attendee.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorCurrentsponsorships.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorDashboard.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorloginBoth.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Vendorloginsponsor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorLoginvendor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorMakePaymentSponsor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorRegistersponsor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorRegistrationAndProfilemgmt.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminReportsAnalysis.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorRegistration.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorServicesAndSponsorshipbidding.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.Startup.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketandSales.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.AdminUserManagement.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorAndsponsorInterface.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorManagementOrganizer.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorTrackallpayments.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.VendorViewContracts.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.csproj.GenerateResource.cache
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.csproj.CoreCompileInputs.cache
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\EnvDTE.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\stdole.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.csproj.CopyComplete
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ticketSalesReport.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.reportOrganizerPerformance.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.REportPlatformGRowth.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ReportUSerDEmographics.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ReportEventRevenue.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ReportLoss.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ReportEventFeedback.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ReportEventAttendence.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ReportSponserPerformance.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\ProjectFiles\ProjectFiles\obj\Debug\EventVerse.ReportVendorPerformance.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\Attendeestartup.resx
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\EventVerse.exe.config
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\EventVerse.exe
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\EventVerse.pdb
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\EnvDTE.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\stdole.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.csproj.AssemblyReference.cache
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminAddEvents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Admin_interface.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminManageOrganizers.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminManageUsers.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEventCategories.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminUpdateEvents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeManagePersonalInfo.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeTicketCheckIncs.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeViewpastevents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeFeedback.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerAttendeeMgmt.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeRegistrationForm.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeTickets.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerManageEvents.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketsalesmetrics.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerUpdateTickets.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ReportEventAttendence.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ReportEventFeedback.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ReportEventRevenue.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ReportLoss.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.reportOrganizerPerformance.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.REportPlatformGRowth.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ReportSponserPerformance.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ReportUSerDEmographics.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ReportVendorPerformance.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.ticketSalesReport.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorContractAndpayment.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeDownloadEticket.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerEventAnalytics.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeeventDashboard.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminEventManagement.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeEventSearch.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Feedback_Moderation.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AttendeeLoginForm.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Attendeemanagepersonal.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerInterface.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerRegistration.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Properties.Resources.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Attendeestartup.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Rate_events_Attendee.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorCurrentsponsorships.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorDashboard.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorloginBoth.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Vendorloginsponsor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorLoginvendor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorMakePaymentSponsor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorRegistersponsor.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorRegistrationAndProfilemgmt.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminReportsAnalysis.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorRegistration.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorServicesAndSponsorshipbidding.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.Startup.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.OrganizerTicketandSales.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.AdminUserManagement.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorAndsponsorInterface.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorManagementOrganizer.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorTrackallpayments.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.VendorViewContracts.resources
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.csproj.GenerateResource.cache
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.csproj.CoreCompileInputs.cache
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.csproj.CopyComplete
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.exe
+C:\Users\shamii\OneDrive - FAST National University\Desktop\ProjectFiles\DBProject(22i-2690_22i-2627_22i-2463)\ProjectFiles\obj\Debug\EventVerse.pdb

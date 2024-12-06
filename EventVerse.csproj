@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F765886-FFE8-4032-BC83-A118169A89FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EventVerse</RootNamespace>
+    <AssemblyName>EventVerse</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAddEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAddEvents.Designer.cs">
+      <DependentUpon>AdminAddEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admininterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admininterface.Designer.cs">
+      <DependentUpon>Admininterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManageOrganizers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminManageOrganizers.Designer.cs">
+      <DependentUpon>AdminManageOrganizers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminManageUsers.Designer.cs">
+      <DependentUpon>AdminManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateEventCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateEventCategories.Designer.cs">
+      <DependentUpon>AdminUpdateEventCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateEvents.Designer.cs">
+      <DependentUpon>AdminUpdateEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeManagePersonalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeManagePersonalInfo.Designer.cs">
+      <DependentUpon>AttendeeManagePersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeTicketCheckIncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeTicketCheckIncs.Designer.cs">
+      <DependentUpon>AttendeeTicketCheckIncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeViewpastevents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeViewpastevents.Designer.cs">
+      <DependentUpon>AttendeeViewpastevents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerAttendeeFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerAttendeeFeedback.Designer.cs">
+      <DependentUpon>OrganizerAttendeeFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerAttendeeMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerAttendeeMgmt.Designer.cs">
+      <DependentUpon>OrganizerAttendeeMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeRegistrationForm.Designer.cs">
+      <DependentUpon>AttendeeRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeTickets.Designer.cs">
+      <DependentUpon>AttendeeTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerManageEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerManageEvents.Designer.cs">
+      <DependentUpon>OrganizerManageEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerTicketsalesmetrics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerTicketsalesmetrics.Designer.cs">
+      <DependentUpon>OrganizerTicketsalesmetrics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerUpdateTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerUpdateTickets.Designer.cs">
+      <DependentUpon>OrganizerUpdateTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportEventAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportEventAttendence.Designer.cs">
+      <DependentUpon>ReportEventAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportEventFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportEventFeedback.Designer.cs">
+      <DependentUpon>ReportEventFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportEventRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportEventRevenue.Designer.cs">
+      <DependentUpon>ReportEventRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportLoss.Designer.cs">
+      <DependentUpon>ReportLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportOrganizerPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportOrganizerPerformance.Designer.cs">
+      <DependentUpon>reportOrganizerPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REportPlatformGRowth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REportPlatformGRowth.Designer.cs">
+      <DependentUpon>REportPlatformGRowth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSponserPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSponserPerformance.Designer.cs">
+      <DependentUpon>ReportSponserPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportUSerDEmographics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportUSerDEmographics.Designer.cs">
+      <DependentUpon>ReportUSerDEmographics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportVendorPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportVendorPerformance.Designer.cs">
+      <DependentUpon>ReportVendorPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ticketSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticketSalesReport.Designer.cs">
+      <DependentUpon>ticketSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorContractAndpayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorContractAndpayment.Designer.cs">
+      <DependentUpon>VendorContractAndpayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeDownloadEticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeDownloadEticket.Designer.cs">
+      <DependentUpon>AttendeeDownloadEticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerEventAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerEventAnalytics.Designer.cs">
+      <DependentUpon>OrganizerEventAnalytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeeventDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeeventDashboard.Designer.cs">
+      <DependentUpon>AttendeeeventDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEventManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEventManagement.Designer.cs">
+      <DependentUpon>AdminEventManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeEventSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeEventSearch.Designer.cs">
+      <DependentUpon>AttendeeEventSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFeedback Moderation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFeedback Moderation.Designer.cs">
+      <DependentUpon>AdminFeedback Moderation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeLoginForm.Designer.cs">
+      <DependentUpon>AttendeeLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendeemanagepersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendeemanagepersonal.Designer.cs">
+      <DependentUpon>Attendeemanagepersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerInterface.Designer.cs">
+      <DependentUpon>OrganizerInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerRegistration.Designer.cs">
+      <DependentUpon>OrganizerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Attendeestartup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendeestartup.Designer.cs">
+      <DependentUpon>Attendeestartup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeRateevents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeRateevents.Designer.cs">
+      <DependentUpon>AttendeeRateevents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorCurrentsponsorships.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorCurrentsponsorships.Designer.cs">
+      <DependentUpon>VendorCurrentsponsorships.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorDashboard.Designer.cs">
+      <DependentUpon>VendorDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorloginBoth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorloginBoth.Designer.cs">
+      <DependentUpon>VendorloginBoth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendorloginsponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendorloginsponsor.Designer.cs">
+      <DependentUpon>Vendorloginsponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorLoginvendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorLoginvendor.Designer.cs">
+      <DependentUpon>VendorLoginvendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorMakePaymentSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorMakePaymentSponsor.Designer.cs">
+      <DependentUpon>VendorMakePaymentSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorRegistersponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorRegistersponsor.Designer.cs">
+      <DependentUpon>VendorRegistersponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorRegistrationAndProfilemgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorRegistrationAndProfilemgmt.Designer.cs">
+      <DependentUpon>VendorRegistrationAndProfilemgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReportsAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReportsAnalysis.Designer.cs">
+      <DependentUpon>AdminReportsAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorRegistration.Designer.cs">
+      <DependentUpon>VendorRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorServicesAndSponsorshipbidding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorServicesAndSponsorshipbidding.Designer.cs">
+      <DependentUpon>VendorServicesAndSponsorshipbidding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizerTicketandSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizerTicketandSales.Designer.cs">
+      <DependentUpon>OrganizerTicketandSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUserManagement.Designer.cs">
+      <DependentUpon>AdminUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorAndsponsorInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorAndsponsorInterface.Designer.cs">
+      <DependentUpon>VendorAndsponsorInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorManagementOrganizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorManagementOrganizer.Designer.cs">
+      <DependentUpon>VendorManagementOrganizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorTrackallpayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorTrackallpayments.Designer.cs">
+      <DependentUpon>VendorTrackallpayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorViewContracts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorViewContracts.Designer.cs">
+      <DependentUpon>VendorViewContracts.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAddEvents.resx">
+      <DependentUpon>AdminAddEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admininterface.resx">
+      <DependentUpon>Admininterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminManageOrganizers.resx">
+      <DependentUpon>AdminManageOrganizers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminManageUsers.resx">
+      <DependentUpon>AdminManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateEventCategories.resx">
+      <DependentUpon>AdminUpdateEventCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateEvents.resx">
+      <DependentUpon>AdminUpdateEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeManagePersonalInfo.resx">
+      <DependentUpon>AttendeeManagePersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeTicketCheckIncs.resx">
+      <DependentUpon>AttendeeTicketCheckIncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeViewpastevents.resx">
+      <DependentUpon>AttendeeViewpastevents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerAttendeeFeedback.resx">
+      <DependentUpon>OrganizerAttendeeFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerAttendeeMgmt.resx">
+      <DependentUpon>OrganizerAttendeeMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeRegistrationForm.resx">
+      <DependentUpon>AttendeeRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeTickets.resx">
+      <DependentUpon>AttendeeTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerManageEvents.resx">
+      <DependentUpon>OrganizerManageEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="organizerPerformance.rdlc" />
+    <EmbeddedResource Include="OrganizerTicketsalesmetrics.resx">
+      <DependentUpon>OrganizerTicketsalesmetrics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerUpdateTickets.resx">
+      <DependentUpon>OrganizerUpdateTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportEventattendence.rdlc" />
+    <EmbeddedResource Include="ReportEventAttendence.resx">
+      <DependentUpon>ReportEventAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteventFeedback.rdlc" />
+    <EmbeddedResource Include="ReportEventFeedback.resx">
+      <DependentUpon>ReportEventFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteventRevenue.rdlc" />
+    <EmbeddedResource Include="ReportEventRevenue.resx">
+      <DependentUpon>ReportEventRevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportloss.rdlc" />
+    <EmbeddedResource Include="ReportLoss.resx">
+      <DependentUpon>ReportLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportOrganizerPerformance.resx">
+      <DependentUpon>reportOrganizerPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportplatformgrowth.rdlc" />
+    <EmbeddedResource Include="REportPlatformGRowth.resx">
+      <DependentUpon>REportPlatformGRowth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportsponserperform.rdlc" />
+    <EmbeddedResource Include="ReportSponserPerformance.resx">
+      <DependentUpon>ReportSponserPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportuserDemo.rdlc" />
+    <EmbeddedResource Include="ReportUSerDEmographics.resx">
+      <DependentUpon>ReportUSerDEmographics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportvendorperform.rdlc" />
+    <EmbeddedResource Include="ReportVendorPerformance.resx">
+      <DependentUpon>ReportVendorPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketSales.rdlc" />
+    <EmbeddedResource Include="ticketSalesReport.resx">
+      <DependentUpon>ticketSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorContractAndpayment.resx">
+      <DependentUpon>VendorContractAndpayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeDownloadEticket.resx">
+      <DependentUpon>AttendeeDownloadEticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerEventAnalytics.resx">
+      <DependentUpon>OrganizerEventAnalytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeeventDashboard.resx">
+      <DependentUpon>AttendeeeventDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEventManagement.resx">
+      <DependentUpon>AdminEventManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeEventSearch.resx">
+      <DependentUpon>AttendeeEventSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFeedback Moderation.resx">
+      <DependentUpon>AdminFeedback Moderation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeLoginForm.resx">
+      <DependentUpon>AttendeeLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendeemanagepersonal.resx">
+      <DependentUpon>Attendeemanagepersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerInterface.resx">
+      <DependentUpon>OrganizerInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerRegistration.resx">
+      <DependentUpon>OrganizerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Attendeestartup.resx">
+      <DependentUpon>Attendeestartup.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendeeRateevents.resx">
+      <DependentUpon>AttendeeRateevents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorCurrentsponsorships.resx">
+      <DependentUpon>VendorCurrentsponsorships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorDashboard.resx">
+      <DependentUpon>VendorDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorloginBoth.resx">
+      <DependentUpon>VendorloginBoth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendorloginsponsor.resx">
+      <DependentUpon>Vendorloginsponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorLoginvendor.resx">
+      <DependentUpon>VendorLoginvendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorMakePaymentSponsor.resx">
+      <DependentUpon>VendorMakePaymentSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorRegistersponsor.resx">
+      <DependentUpon>VendorRegistersponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorRegistrationAndProfilemgmt.resx">
+      <DependentUpon>VendorRegistrationAndProfilemgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReportsAnalysis.resx">
+      <DependentUpon>AdminReportsAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorRegistration.resx">
+      <DependentUpon>VendorRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorServicesAndSponsorshipbidding.resx">
+      <DependentUpon>VendorServicesAndSponsorshipbidding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizerTicketandSales.resx">
+      <DependentUpon>OrganizerTicketandSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserManagement.resx">
+      <DependentUpon>AdminUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorAndsponsorInterface.resx">
+      <DependentUpon>VendorAndsponsorInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorManagementOrganizer.resx">
+      <DependentUpon>VendorManagementOrganizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorTrackallpayments.resx">
+      <DependentUpon>VendorTrackallpayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorViewContracts.resx">
+      <DependentUpon>VendorViewContracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

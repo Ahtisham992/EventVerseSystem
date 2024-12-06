@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|c:\\users\\zainu\\onedrive\\desktop\\projectfiles\\projectfiles\\vendorviewcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|solutionrelative:vendorviewcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|c:\\users\\zainu\\onedrive\\desktop\\projectfiles\\projectfiles\\vendorviewcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|solutionrelative:vendorviewcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|c:\\users\\zainu\\onedrive\\desktop\\projectfiles\\projectfiles\\vendortrackallpayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|solutionrelative:vendortrackallpayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|c:\\users\\zainu\\onedrive\\desktop\\projectfiles\\projectfiles\\vendorservicesandsponsorshipbidding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F765886-FFE8-4032-BC83-A118169A89FE}|EventVerse.csproj|solutionrelative:vendorservicesandsponsorshipbidding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VendorViewContracts.cs",
+              "DocumentMoniker": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorViewContracts.cs",
+              "RelativeDocumentMoniker": "VendorViewContracts.cs",
+              "ToolTip": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorViewContracts.cs",
+              "RelativeToolTip": "VendorViewContracts.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAAAFEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:29:57.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VendorViewContracts.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorViewContracts.cs",
+              "RelativeDocumentMoniker": "VendorViewContracts.cs",
+              "ToolTip": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorViewContracts.cs [Design]",
+              "RelativeToolTip": "VendorViewContracts.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:29:55.572Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VendorTrackallpayments.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorTrackallpayments.cs",
+              "RelativeDocumentMoniker": "VendorTrackallpayments.cs",
+              "ToolTip": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorTrackallpayments.cs [Design]",
+              "RelativeToolTip": "VendorTrackallpayments.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:29:26.974Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendorServicesAndSponsorshipbidding.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorServicesAndSponsorshipbidding.cs",
+              "RelativeDocumentMoniker": "VendorServicesAndSponsorshipbidding.cs",
+              "ToolTip": "C:\\Users\\zainu\\OneDrive\\Desktop\\ProjectFiles\\ProjectFiles\\VendorServicesAndSponsorshipbidding.cs [Design]",
+              "RelativeToolTip": "VendorServicesAndSponsorshipbidding.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:29:22.464Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

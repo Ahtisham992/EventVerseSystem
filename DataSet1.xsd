@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EventVerseConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EventVerseConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EventVerse.Properties.Settings.GlobalReference.Default.EventVerseConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>WITH EventRatings AS (
+    SELECT 
+        F.EventID,
+        AVG(F.Rating) AS AverageRating,
+        CASE 
+            WHEN AVG(F.Rating) &gt;= 4 THEN 'Positive'
+            WHEN AVG(F.Rating) = 3 THEN 'Neutral'
+            ELSE 'Negative'
+        END AS OverallSentiment
+    FROM 
+        FEEDBACK F
+    GROUP BY 
+        F.EventID
+),
+SentimentCounts AS (
+    SELECT
+        F.EventID,
+        SUM(CASE WHEN F.Rating &gt;= 4 THEN 1 ELSE 0 END) AS PositiveFeedbackCount,
+        SUM(CASE WHEN F.Rating = 3 THEN 1 ELSE 0 END) AS NeutralFeedbackCount,
+        SUM(CASE WHEN F.Rating &lt;= 2 THEN 1 ELSE 0 END) AS NegativeFeedbackCount
+    FROM 
+        FEEDBACK F
+    GROUP BY 
+        F.EventID
+),
+TopRatedEvents AS (
+    SELECT 
+        TOP 5 E.EventID,
+        E.Title,
+        ER.AverageRating
+    FROM 
+        EVENT E
+    INNER JOIN EventRatings ER ON E.EventID = ER.EventID
+    ORDER BY 
+        ER.AverageRating DESC
+)
+SELECT 
+    E.EventID,
+    E.Title,
+    ER.AverageRating,
+    ER.OverallSentiment,
+    SC.PositiveFeedbackCount,
+    SC.NeutralFeedbackCount,
+    SC.NegativeFeedbackCount
+FROM 
+    EVENT E
+INNER JOIN EventRatings ER ON E.EventID = ER.EventID
+INNER JOIN SentimentCounts SC ON E.EventID = SC.EventID
+ORDER BY 
+    ER.AverageRating DESC;
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EventID" DataSetColumn="EventID" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="AverageRating" DataSetColumn="AverageRating" />
+              <Mapping SourceColumn="OverallSentiment" DataSetColumn="OverallSentiment" />
+              <Mapping SourceColumn="PositiveFeedbackCount" DataSetColumn="PositiveFeedbackCount" />
+              <Mapping SourceColumn="NeutralFeedbackCount" DataSetColumn="NeutralFeedbackCount" />
+              <Mapping SourceColumn="NegativeFeedbackCount" DataSetColumn="NegativeFeedbackCount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PAYMENTNEWTableAdapter" GeneratorDataComponentClassName="PAYMENTNEWTableAdapter" Name="PAYMENTNEW" UserDataComponentName="PAYMENTNEWTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectName="EventVerse.dbo.PAYMENTNEW" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+	SELECT 
+    COUNT(R.RegistrationID) AS TotalAbandonedBookings,
+    SUM(T.Price * T.Availability) AS PotentialRevenueLost,
+    P.PaymentStatus AS CommonReason,
+    COUNT(P.PaymentStatus) AS ReasonCount
+FROM 
+    REGISTRATION R
+LEFT JOIN EVENT E ON R.EventID = E.EventID
+LEFT JOIN TICKET T ON E.EventID = T.EventID
+LEFT JOIN PAYMENTNEW P ON R.RegistrationID = P.RegistrationID
+WHERE 
+    R.Status = 'Pending' OR P.PaymentStatus IN ('Failed', 'Pending')
+GROUP BY 
+    P.PaymentStatus
+ORDER BY 
+    ReasonCount DESC;
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TotalAbandonedBookings" DataSetColumn="TotalAbandonedBookings" />
+              <Mapping SourceColumn="PotentialRevenueLost" DataSetColumn="PotentialRevenueLost" />
+              <Mapping SourceColumn="CommonReason" DataSetColumn="CommonReason" />
+              <Mapping SourceColumn="ReasonCount" DataSetColumn="ReasonCount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CATEGORYTableAdapter" GeneratorDataComponentClassName="CATEGORYTableAdapter" Name="CATEGORY" UserDataComponentName="CATEGORYTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectName="EventVerse.dbo.CATEGORY" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+	SELECT 
+    C.Name AS EventCategory,
+    ISNULL(SUM(P.Amount), 0) AS TotalSponsorRevenue,
+    ISNULL(SUM(T.Price * T.Availability), 0) AS TotalTicketRevenue,
+    ISNULL(SUM(P.Amount), 0) + ISNULL(SUM(T.Price * T.Availability), 0) AS TotalRevenue
+FROM 
+    CATEGORY C
+LEFT JOIN EVENT E ON C.CategoryID = E.CategoryID
+LEFT JOIN PAYMENTNEW P ON E.EventID = P.EventID
+LEFT JOIN TICKET T ON E.EventID = T.EventID
+GROUP BY 
+    C.Name
+ORDER BY 
+    TotalRevenue DESC;</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EventCategory" DataSetColumn="EventCategory" />
+              <Mapping SourceColumn="TotalSponsorRevenue" DataSetColumn="TotalSponsorRevenue" />
+              <Mapping SourceColumn="TotalTicketRevenue" DataSetColumn="TotalTicketRevenue" />
+              <Mapping SourceColumn="TotalRevenue" DataSetColumn="TotalRevenue" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable2TableAdapter" GeneratorDataComponentClassName="DataTable2TableAdapter" Name="DataTable2" UserDataComponentName="DataTable2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+SELECT 
+    -- Age and Gender Distribution
+    CASE 
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) &lt; 18 THEN 'Under 18'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) BETWEEN 18 AND 24 THEN '18-24'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) BETWEEN 25 AND 34 THEN '25-34'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) BETWEEN 35 AND 44 THEN '35-44'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) &gt;= 45 THEN '45+'
+        ELSE 'Unknown'
+    END AS AgeGroup,
+    U.Gender,
+    COUNT(U.UserID) AS UserCount,
+
+    -- Location-Based Insights
+    E.Location,
+    COUNT(DISTINCT R.RegistrationID) AS TotalParticipations,
+
+    -- Event Preferences
+    C.Name AS EventCategory,
+    COUNT(DISTINCT E.EventID) AS EventCount
+
+FROM 
+    REGISTRATION R
+LEFT JOIN 
+    [USER] U ON R.AttendeeID = U.UserID
+LEFT JOIN 
+    EVENT E ON R.EventID = E.EventID
+LEFT JOIN 
+    CATEGORY C ON E.CategoryID = C.CategoryID
+WHERE 
+    -- Filter by active events or timeframe
+    E.StartDate BETWEEN '2024-01-01' AND '2024-12-31'
+GROUP BY 
+    CASE 
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) &lt; 18 THEN 'Under 18'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) BETWEEN 18 AND 24 THEN '18-24'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) BETWEEN 25 AND 34 THEN '25-34'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) BETWEEN 35 AND 44 THEN '35-44'
+        WHEN DATEDIFF(YEAR, U.DateOfBirth, GETDATE()) &gt;= 45 THEN '45+'
+        ELSE 'Unknown'
+    END, 
+    U.Gender,
+    E.Location,
+    C.Name
+ORDER BY 
+    AgeGroup ASC, 
+    UserCount DESC,
+    TotalParticipations DESC,
+    EventCount DESC;
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AgeGroup" DataSetColumn="AgeGroup" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="UserCount" DataSetColumn="UserCount" />
+              <Mapping SourceColumn="Location" DataSetColumn="Location" />
+              <Mapping SourceColumn="TotalParticipations" DataSetColumn="TotalParticipations" />
+              <Mapping SourceColumn="EventCategory" DataSetColumn="EventCategory" />
+              <Mapping SourceColumn="EventCount" DataSetColumn="EventCount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CATEGORY1TableAdapter" GeneratorDataComponentClassName="CATEGORY1TableAdapter" Name="CATEGORY1" UserDataComponentName="CATEGORY1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectName="EventVerse.dbo.CATEGORY" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+SELECT 
+    -- New User Registrations
+    FORMAT(R.RegistrationDate, 'yyyy-MM') AS RegistrationMonth,
+    COUNT(DISTINCT R.AttendeeID) AS NewUserRegistrations,
+
+    -- Active Users (Organizers and Attendees)
+    COUNT(DISTINCT CASE WHEN U.Role IN ('organizer', 'attendee') THEN U.UserID END) AS ActiveUsers,
+
+    -- Event Categories Growth
+    C.Name AS EventCategory,
+    COUNT(DISTINCT E.EventID) AS EventsInCategory,
+    FORMAT(E.StartDate, 'yyyy-MM') AS EventMonth
+FROM 
+    REGISTRATION R
+LEFT JOIN 
+    [USER] U ON R.AttendeeID = U.UserID
+LEFT JOIN 
+    EVENT E ON R.EventID = E.EventID
+LEFT JOIN 
+    CATEGORY C ON E.CategoryID = C.CategoryID
+WHERE 
+    -- Define the timeframe for registrations and events
+    (R.RegistrationDate BETWEEN '2024-01-01' AND '2024-12-31' OR E.StartDate BETWEEN '2024-01-01' AND '2024-12-31')
+GROUP BY 
+    FORMAT(R.RegistrationDate, 'yyyy-MM'),
+    FORMAT(E.StartDate, 'yyyy-MM'),
+    C.Name
+ORDER BY 
+    RegistrationMonth ASC, 
+    EventMonth ASC, 
+    EventsInCategory DESC;
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RegistrationMonth" DataSetColumn="RegistrationMonth" />
+              <Mapping SourceColumn="NewUserRegistrations" DataSetColumn="NewUserRegistrations" />
+              <Mapping SourceColumn="ActiveUsers" DataSetColumn="ActiveUsers" />
+              <Mapping SourceColumn="EventCategory" DataSetColumn="EventCategory" />
+              <Mapping SourceColumn="EventsInCategory" DataSetColumn="EventsInCategory" />
+              <Mapping SourceColumn="EventMonth" DataSetColumn="EventMonth" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrganizersTableAdapter" GeneratorDataComponentClassName="OrganizersTableAdapter" Name="Organizers" UserDataComponentName="OrganizersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectName="EventVerse.dbo.Organizers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+	-- Organizer Performance Report
+SELECT 
+    O.OrganizerID,
+    O.OrganizationName,
+    COUNT(E.EventID) AS TotalEventsOrganized,
+    AVG(F.Rating) AS AverageEventRating,
+    SUM(T.Price * COALESCE(R.CountSold, 0)) AS TotalRevenueGenerated,
+    COUNT(Q.QueryID) AS TotalQueriesHandled
+FROM 
+    ORGANIZERS O
+LEFT JOIN EVENT E ON O.OrganizerID = E.OrganizerID
+LEFT JOIN TICKET T ON E.EventID = T.EventID
+LEFT JOIN (
+    SELECT EventID, COUNT(RegistrationID) AS CountSold
+    FROM REGISTRATION
+    GROUP BY EventID
+) R ON E.EventID = R.EventID
+LEFT JOIN FEEDBACK F ON E.EventID = F.EventID
+LEFT JOIN QUERY Q ON E.EventID = Q.EventID
+GROUP BY O.OrganizerID, O.OrganizationName;
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrganizerID" DataSetColumn="OrganizerID" />
+              <Mapping SourceColumn="OrganizationName" DataSetColumn="OrganizationName" />
+              <Mapping SourceColumn="TotalEventsOrganized" DataSetColumn="TotalEventsOrganized" />
+              <Mapping SourceColumn="AverageEventRating" DataSetColumn="AverageEventRating" />
+              <Mapping SourceColumn="TotalRevenueGenerated" DataSetColumn="TotalRevenueGenerated" />
+              <Mapping SourceColumn="TotalQueriesHandled" DataSetColumn="TotalQueriesHandled" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable3TableAdapter" GeneratorDataComponentClassName="DataTable3TableAdapter" Name="DataTable3" UserDataComponentName="DataTable3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>	SELECT 
+    E.EventID,
+    E.Title AS EventName,
+    SUM(T.Price * (T.Availability - COALESCE(R.CountSold, 0))) AS TotalRevenue,
+    SUM(T.Price * COALESCE(R.CountSold, 0)) AS RevenueGenerated,
+    T.TicketType AS Category,
+    COALESCE(R.CountSold, 0) AS TicketsSold,
+    T.Availability AS TotalTicketsAvailable,
+    (COALESCE(R.CountSold, 0) * 100.0 / NULLIF(T.Availability, 0)) AS SalesPercentage
+FROM 
+    EVENT E
+LEFT JOIN TICKET T ON E.EventID = T.EventID
+LEFT JOIN (
+    SELECT 
+        EventID, 
+        COUNT(RegistrationID) AS CountSold
+    FROM 
+        REGISTRATION
+    GROUP BY 
+        EventID
+) R ON E.EventID = R.EventID
+GROUP BY 
+    E.EventID, E.Title, T.TicketType, T.Availability, R.CountSold;
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EventID" DataSetColumn="EventID" />
+              <Mapping SourceColumn="EventName" DataSetColumn="EventName" />
+              <Mapping SourceColumn="TotalRevenue" DataSetColumn="TotalRevenue" />
+              <Mapping SourceColumn="RevenueGenerated" DataSetColumn="RevenueGenerated" />
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="TicketsSold" DataSetColumn="TicketsSold" />
+              <Mapping SourceColumn="TotalTicketsAvailable" DataSetColumn="TotalTicketsAvailable" />
+              <Mapping SourceColumn="SalesPercentage" DataSetColumn="SalesPercentage" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EVENTTableAdapter" GeneratorDataComponentClassName="EVENTTableAdapter" Name="EVENT" UserDataComponentName="EVENTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectName="EventVerse.dbo.EVENT" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT 
+    E.EventID,  -- Event ID
+    COUNT(R.RegistrationID) AS TotalAttendees,  -- Total number of attendees
+    CAST(COUNT(R.RegistrationID) * 100.0 / NULLIF((SELECT COUNT(AttendeeID) 
+                                                  FROM REGISTRATION RR
+                                                  WHERE RR.EventID = E.EventID), 0) AS DECIMAL(5,2)) AS AttendanceRate,  -- Attendance rate
+    CONCAT('Average rating: ', 
+           CAST(AVG(F.Rating) AS DECIMAL(3,1)), 
+           '/5; Feedback themes: ',
+           -- Aggregate feedback themes for the event
+           (SELECT STRING_AGG(
+                CASE 
+                    WHEN F2.Rating &gt; 4 THEN 'Excellent event'
+                    WHEN F2.Rating BETWEEN 3 AND 4 THEN 'Good but needs improvements'
+                    ELSE 'Poor organization'
+                END, ', ') 
+            FROM FEEDBACK F2 
+            WHERE F2.EventID = E.EventID)) AS FeedbackSummary  -- Correctly aggregate feedback themes
+FROM 
+    EVENT E
+LEFT JOIN REGISTRATION R ON E.EventID = R.EventID  -- Joining REGISTRATION table to get attendees
+LEFT JOIN FEEDBACK F ON E.EventID = F.EventID  -- Joining FEEDBACK table to get feedback
+
+GROUP BY 
+    E.EventID;  -- Grouping by EventID to generate reports per event
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EventID" DataSetColumn="EventID" />
+              <Mapping SourceColumn="TotalAttendees" DataSetColumn="TotalAttendees" />
+              <Mapping SourceColumn="AttendanceRate" DataSetColumn="AttendanceRate" />
+              <Mapping SourceColumn="FeedbackSummary" DataSetColumn="FeedbackSummary" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable4TableAdapter" GeneratorDataComponentClassName="DataTable4TableAdapter" Name="DataTable4" UserDataComponentName="DataTable4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>-- Contracts Fulfilled and Top Services
+WITH ServiceFrequency AS (
+    SELECT 
+        VendorID,
+        ServiceProvided,
+        COUNT(ServiceProvided) AS Frequency
+    FROM CONTRACTNEW
+    GROUP BY VendorID, ServiceProvided
+)
+, TopServices AS (
+    SELECT 
+        sf.VendorID,
+        sf.ServiceProvided
+    FROM ServiceFrequency sf
+    INNER JOIN (
+        SELECT 
+            VendorID,
+            MAX(Frequency) AS MaxFrequency
+        FROM ServiceFrequency
+        GROUP BY VendorID
+    ) mf ON sf.VendorID = mf.VendorID AND sf.Frequency = mf.MaxFrequency
+)
+SELECT 
+    V.VendorID,
+    U.Name AS VendorName,
+    COUNT(C.ContractID) AS ContractsFulfilled,
+    AVG(F.Rating) AS VendorRating, -- Average rating from feedback
+    TS.ServiceProvided AS MostFrequentService
+FROM VENDORNEW V
+INNER JOIN [USER] U ON V.UserID = U.UserID
+LEFT JOIN CONTRACTNEW C ON V.VendorID = C.VendorID
+LEFT JOIN EVENT E ON C.EventID = E.EventID
+LEFT JOIN FEEDBACK F ON E.EventID = F.EventID
+LEFT JOIN TopServices TS ON V.VendorID = TS.VendorID
+GROUP BY 
+    V.VendorID, U.Name, TS.ServiceProvided
+ORDER BY 
+    ContractsFulfilled DESC, VendorRating DESC;
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="VendorID" DataSetColumn="VendorID" />
+              <Mapping SourceColumn="VendorName" DataSetColumn="VendorName" />
+              <Mapping SourceColumn="ContractsFulfilled" DataSetColumn="ContractsFulfilled" />
+              <Mapping SourceColumn="VendorRating" DataSetColumn="VendorRating" />
+              <Mapping SourceColumn="MostFrequentService" DataSetColumn="MostFrequentService" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable5TableAdapter" GeneratorDataComponentClassName="DataTable5TableAdapter" Name="DataTable5" UserDataComponentName="DataTable5TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EventVerseConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+-- Step 1: Total Contributions by Sponsors
+WITH SponsorContributions AS (
+    SELECT 
+        S.SponsorID,
+        U.Name AS SponsorName,
+        SUM(S.ContributionAmount) AS TotalContributions
+    FROM SPONSORSHIPNEW S
+    INNER JOIN SPONSORNEW SP ON S.SponsorID = SP.SponsorID
+    INNER JOIN [USER] U ON SP.UserID = U.UserID
+    GROUP BY S.SponsorID, U.Name
+),
+
+-- Step 2: Partnership Success Metrics
+PartnershipMetrics AS (
+    SELECT 
+        S.SponsorID,
+        COUNT(DISTINCT E.EventID) AS SuccessfulCollaborations,
+        COUNT(E.EventID) AS TotalCollaborations,
+        CASE 
+            WHEN COUNT(E.EventID) = 0 THEN 0
+            ELSE (CAST(COUNT(DISTINCT E.EventID) AS FLOAT) / COUNT(E.EventID)) * 100
+        END AS SuccessRate -- Partnership Success Rate (%)
+    FROM SPONSORSHIPNEW S
+    INNER JOIN EVENT E ON S.EventID = E.EventID
+    GROUP BY S.SponsorID
+),
+
+-- Step 3: Sponsor Visibility Metrics (Simulated Data)
+SponsorVisibility AS (
+    SELECT 
+        SponsorID,
+        SUM(VisibilityScore) AS TotalVisibility
+    FROM (
+        -- Simulate visibility metrics (e.g., ads, mentions)
+        SELECT SponsorID, 10 AS VisibilityScore FROM SPONSORSHIPNEW -- Ad example
+        UNION ALL
+        SELECT SponsorID, 15 AS VisibilityScore FROM SPONSORSHIPNEW -- Mention example
+    ) VisibilityData
+    GROUP BY SponsorID
+)
+
+-- Final Report
+SELECT 
+    SC.SponsorID,
+    SC.SponsorName,
+    SC.TotalContributions,
+    PM.SuccessRate AS PartnershipSuccessRate,
+    SV.TotalVisibility AS SponsorVisibilityMetrics
+FROM SponsorContributions SC
+LEFT JOIN PartnershipMetrics PM ON SC.SponsorID = PM.SponsorID
+LEFT JOIN SponsorVisibility SV ON SC.SponsorID = SV.SponsorID
+ORDER BY SC.TotalContributions DESC, PM.SuccessRate DESC;
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SponsorID" DataSetColumn="SponsorID" />
+              <Mapping SourceColumn="SponsorName" DataSetColumn="SponsorName" />
+              <Mapping SourceColumn="TotalContributions" DataSetColumn="TotalContributions" />
+              <Mapping SourceColumn="PartnershipSuccessRate" DataSetColumn="PartnershipSuccessRate" />
+              <Mapping SourceColumn="SponsorVisibilityMetrics" DataSetColumn="SponsorVisibilityMetrics" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="EventID" msprop:Generator_ColumnPropNameInTable="EventIDColumn" msprop:Generator_ColumnPropNameInRow="EventID" msprop:Generator_ColumnVarNameInTable="columnEventID" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AverageRating" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AverageRating" msprop:Generator_ColumnPropNameInTable="AverageRatingColumn" msprop:Generator_ColumnPropNameInRow="AverageRating" msprop:Generator_ColumnVarNameInTable="columnAverageRating" type="xs:int" minOccurs="0" />
+              <xs:element name="OverallSentiment" msdata:ReadOnly="true" msprop:Generator_UserColumnName="OverallSentiment" msprop:Generator_ColumnPropNameInTable="OverallSentimentColumn" msprop:Generator_ColumnPropNameInRow="OverallSentiment" msprop:Generator_ColumnVarNameInTable="columnOverallSentiment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PositiveFeedbackCount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PositiveFeedbackCount" msprop:Generator_ColumnPropNameInTable="PositiveFeedbackCountColumn" msprop:Generator_ColumnPropNameInRow="PositiveFeedbackCount" msprop:Generator_ColumnVarNameInTable="columnPositiveFeedbackCount" type="xs:int" minOccurs="0" />
+              <xs:element name="NeutralFeedbackCount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NeutralFeedbackCount" msprop:Generator_ColumnPropNameInTable="NeutralFeedbackCountColumn" msprop:Generator_ColumnPropNameInRow="NeutralFeedbackCount" msprop:Generator_ColumnVarNameInTable="columnNeutralFeedbackCount" type="xs:int" minOccurs="0" />
+              <xs:element name="NegativeFeedbackCount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NegativeFeedbackCount" msprop:Generator_ColumnPropNameInTable="NegativeFeedbackCountColumn" msprop:Generator_ColumnPropNameInRow="NegativeFeedbackCount" msprop:Generator_ColumnVarNameInTable="columnNegativeFeedbackCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PAYMENTNEW" msprop:Generator_RowClassName="PAYMENTNEWRow" msprop:Generator_RowEvHandlerName="PAYMENTNEWRowChangeEventHandler" msprop:Generator_RowDeletedName="PAYMENTNEWRowDeleted" msprop:Generator_RowDeletingName="PAYMENTNEWRowDeleting" msprop:Generator_RowEvArgName="PAYMENTNEWRowChangeEvent" msprop:Generator_TablePropName="PAYMENTNEW" msprop:Generator_RowChangedName="PAYMENTNEWRowChanged" msprop:Generator_UserTableName="PAYMENTNEW" msprop:Generator_RowChangingName="PAYMENTNEWRowChanging" msprop:Generator_TableClassName="PAYMENTNEWDataTable" msprop:Generator_TableVarName="tablePAYMENTNEW">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalAbandonedBookings" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalAbandonedBookings" msprop:Generator_ColumnPropNameInTable="TotalAbandonedBookingsColumn" msprop:Generator_ColumnPropNameInRow="TotalAbandonedBookings" msprop:Generator_ColumnVarNameInTable="columnTotalAbandonedBookings" type="xs:int" minOccurs="0" />
+              <xs:element name="PotentialRevenueLost" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PotentialRevenueLost" msprop:Generator_ColumnPropNameInTable="PotentialRevenueLostColumn" msprop:Generator_ColumnPropNameInRow="PotentialRevenueLost" msprop:Generator_ColumnVarNameInTable="columnPotentialRevenueLost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CommonReason" msprop:Generator_UserColumnName="CommonReason" msprop:Generator_ColumnPropNameInTable="CommonReasonColumn" msprop:Generator_ColumnPropNameInRow="CommonReason" msprop:Generator_ColumnVarNameInTable="columnCommonReason" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReasonCount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ReasonCount" msprop:Generator_ColumnPropNameInTable="ReasonCountColumn" msprop:Generator_ColumnPropNameInRow="ReasonCount" msprop:Generator_ColumnVarNameInTable="columnReasonCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CATEGORY" msprop:Generator_RowClassName="CATEGORYRow" msprop:Generator_RowEvHandlerName="CATEGORYRowChangeEventHandler" msprop:Generator_RowDeletedName="CATEGORYRowDeleted" msprop:Generator_RowDeletingName="CATEGORYRowDeleting" msprop:Generator_RowEvArgName="CATEGORYRowChangeEvent" msprop:Generator_TablePropName="CATEGORY" msprop:Generator_RowChangedName="CATEGORYRowChanged" msprop:Generator_UserTableName="CATEGORY" msprop:Generator_RowChangingName="CATEGORYRowChanging" msprop:Generator_TableClassName="CATEGORYDataTable" msprop:Generator_TableVarName="tableCATEGORY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventCategory" msprop:Generator_UserColumnName="EventCategory" msprop:Generator_ColumnPropNameInTable="EventCategoryColumn" msprop:Generator_ColumnPropNameInRow="EventCategory" msprop:Generator_ColumnVarNameInTable="columnEventCategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalSponsorRevenue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalSponsorRevenue" msprop:Generator_ColumnPropNameInTable="TotalSponsorRevenueColumn" msprop:Generator_ColumnPropNameInRow="TotalSponsorRevenue" msprop:Generator_ColumnVarNameInTable="columnTotalSponsorRevenue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalTicketRevenue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalTicketRevenue" msprop:Generator_ColumnPropNameInTable="TotalTicketRevenueColumn" msprop:Generator_ColumnPropNameInRow="TotalTicketRevenue" msprop:Generator_ColumnVarNameInTable="columnTotalTicketRevenue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalRevenue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalRevenue" msprop:Generator_ColumnPropNameInTable="TotalRevenueColumn" msprop:Generator_ColumnPropNameInRow="TotalRevenue" msprop:Generator_ColumnVarNameInTable="columnTotalRevenue" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_RowClassName="DataTable2Row" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AgeGroup" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AgeGroup" msprop:Generator_ColumnPropNameInTable="AgeGroupColumn" msprop:Generator_ColumnPropNameInRow="AgeGroup" msprop:Generator_ColumnVarNameInTable="columnAgeGroup" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_UserColumnName="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserCount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UserCount" msprop:Generator_ColumnPropNameInTable="UserCountColumn" msprop:Generator_ColumnPropNameInRow="UserCount" msprop:Generator_ColumnVarNameInTable="columnUserCount" type="xs:int" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalParticipations" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalParticipations" msprop:Generator_ColumnPropNameInTable="TotalParticipationsColumn" msprop:Generator_ColumnPropNameInRow="TotalParticipations" msprop:Generator_ColumnVarNameInTable="columnTotalParticipations" type="xs:int" minOccurs="0" />
+              <xs:element name="EventCategory" msprop:Generator_UserColumnName="EventCategory" msprop:Generator_ColumnPropNameInTable="EventCategoryColumn" msprop:Generator_ColumnPropNameInRow="EventCategory" msprop:Generator_ColumnVarNameInTable="columnEventCategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EventCount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventCount" msprop:Generator_ColumnPropNameInTable="EventCountColumn" msprop:Generator_ColumnPropNameInRow="EventCount" msprop:Generator_ColumnVarNameInTable="columnEventCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CATEGORY1" msprop:Generator_RowClassName="CATEGORY1Row" msprop:Generator_RowEvHandlerName="CATEGORY1RowChangeEventHandler" msprop:Generator_RowDeletedName="CATEGORY1RowDeleted" msprop:Generator_RowDeletingName="CATEGORY1RowDeleting" msprop:Generator_RowEvArgName="CATEGORY1RowChangeEvent" msprop:Generator_TablePropName="CATEGORY1" msprop:Generator_RowChangedName="CATEGORY1RowChanged" msprop:Generator_UserTableName="CATEGORY1" msprop:Generator_RowChangingName="CATEGORY1RowChanging" msprop:Generator_TableClassName="CATEGORY1DataTable" msprop:Generator_TableVarName="tableCATEGORY1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RegistrationMonth" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RegistrationMonth" msprop:Generator_ColumnPropNameInTable="RegistrationMonthColumn" msprop:Generator_ColumnPropNameInRow="RegistrationMonth" msprop:Generator_ColumnVarNameInTable="columnRegistrationMonth" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewUserRegistrations" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NewUserRegistrations" msprop:Generator_ColumnPropNameInTable="NewUserRegistrationsColumn" msprop:Generator_ColumnPropNameInRow="NewUserRegistrations" msprop:Generator_ColumnVarNameInTable="columnNewUserRegistrations" type="xs:int" minOccurs="0" />
+              <xs:element name="ActiveUsers" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ActiveUsers" msprop:Generator_ColumnPropNameInTable="ActiveUsersColumn" msprop:Generator_ColumnPropNameInRow="ActiveUsers" msprop:Generator_ColumnVarNameInTable="columnActiveUsers" type="xs:int" minOccurs="0" />
+              <xs:element name="EventCategory" msprop:Generator_UserColumnName="EventCategory" msprop:Generator_ColumnPropNameInTable="EventCategoryColumn" msprop:Generator_ColumnPropNameInRow="EventCategory" msprop:Generator_ColumnVarNameInTable="columnEventCategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EventsInCategory" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventsInCategory" msprop:Generator_ColumnPropNameInTable="EventsInCategoryColumn" msprop:Generator_ColumnPropNameInRow="EventsInCategory" msprop:Generator_ColumnVarNameInTable="columnEventsInCategory" type="xs:int" minOccurs="0" />
+              <xs:element name="EventMonth" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventMonth" msprop:Generator_ColumnPropNameInTable="EventMonthColumn" msprop:Generator_ColumnPropNameInRow="EventMonth" msprop:Generator_ColumnVarNameInTable="columnEventMonth" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Organizers" msprop:Generator_RowClassName="OrganizersRow" msprop:Generator_RowEvHandlerName="OrganizersRowChangeEventHandler" msprop:Generator_RowDeletedName="OrganizersRowDeleted" msprop:Generator_RowDeletingName="OrganizersRowDeleting" msprop:Generator_RowEvArgName="OrganizersRowChangeEvent" msprop:Generator_TablePropName="Organizers" msprop:Generator_RowChangedName="OrganizersRowChanged" msprop:Generator_UserTableName="Organizers" msprop:Generator_RowChangingName="OrganizersRowChanging" msprop:Generator_TableClassName="OrganizersDataTable" msprop:Generator_TableVarName="tableOrganizers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrganizerID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="OrganizerID" msprop:Generator_ColumnPropNameInTable="OrganizerIDColumn" msprop:Generator_ColumnPropNameInRow="OrganizerID" msprop:Generator_ColumnVarNameInTable="columnOrganizerID" type="xs:int" />
+              <xs:element name="OrganizationName" msprop:Generator_UserColumnName="OrganizationName" msprop:Generator_ColumnPropNameInTable="OrganizationNameColumn" msprop:Generator_ColumnPropNameInRow="OrganizationName" msprop:Generator_ColumnVarNameInTable="columnOrganizationName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalEventsOrganized" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalEventsOrganized" msprop:Generator_ColumnPropNameInTable="TotalEventsOrganizedColumn" msprop:Generator_ColumnPropNameInRow="TotalEventsOrganized" msprop:Generator_ColumnVarNameInTable="columnTotalEventsOrganized" type="xs:int" minOccurs="0" />
+              <xs:element name="AverageEventRating" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AverageEventRating" msprop:Generator_ColumnPropNameInTable="AverageEventRatingColumn" msprop:Generator_ColumnPropNameInRow="AverageEventRating" msprop:Generator_ColumnVarNameInTable="columnAverageEventRating" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalRevenueGenerated" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalRevenueGenerated" msprop:Generator_ColumnPropNameInTable="TotalRevenueGeneratedColumn" msprop:Generator_ColumnPropNameInRow="TotalRevenueGenerated" msprop:Generator_ColumnVarNameInTable="columnTotalRevenueGenerated" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalQueriesHandled" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalQueriesHandled" msprop:Generator_ColumnPropNameInTable="TotalQueriesHandledColumn" msprop:Generator_ColumnPropNameInRow="TotalQueriesHandled" msprop:Generator_ColumnVarNameInTable="columnTotalQueriesHandled" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable3" msprop:Generator_RowClassName="DataTable3Row" msprop:Generator_RowEvHandlerName="DataTable3RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable3RowDeleted" msprop:Generator_RowDeletingName="DataTable3RowDeleting" msprop:Generator_RowEvArgName="DataTable3RowChangeEvent" msprop:Generator_TablePropName="DataTable3" msprop:Generator_RowChangedName="DataTable3RowChanged" msprop:Generator_UserTableName="DataTable3" msprop:Generator_RowChangingName="DataTable3RowChanging" msprop:Generator_TableClassName="DataTable3DataTable" msprop:Generator_TableVarName="tableDataTable3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="EventID" msprop:Generator_ColumnPropNameInTable="EventIDColumn" msprop:Generator_ColumnPropNameInRow="EventID" msprop:Generator_ColumnVarNameInTable="columnEventID" type="xs:int" />
+              <xs:element name="EventName" msprop:Generator_UserColumnName="EventName" msprop:Generator_ColumnPropNameInTable="EventNameColumn" msprop:Generator_ColumnPropNameInRow="EventName" msprop:Generator_ColumnVarNameInTable="columnEventName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalRevenue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalRevenue" msprop:Generator_ColumnPropNameInTable="TotalRevenueColumn" msprop:Generator_ColumnPropNameInRow="TotalRevenue" msprop:Generator_ColumnVarNameInTable="columnTotalRevenue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RevenueGenerated" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RevenueGenerated" msprop:Generator_ColumnPropNameInTable="RevenueGeneratedColumn" msprop:Generator_ColumnPropNameInRow="RevenueGenerated" msprop:Generator_ColumnVarNameInTable="columnRevenueGenerated" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TicketsSold" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TicketsSold" msprop:Generator_ColumnPropNameInTable="TicketsSoldColumn" msprop:Generator_ColumnPropNameInRow="TicketsSold" msprop:Generator_ColumnVarNameInTable="columnTicketsSold" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalTicketsAvailable" msprop:Generator_UserColumnName="TotalTicketsAvailable" msprop:Generator_ColumnPropNameInTable="TotalTicketsAvailableColumn" msprop:Generator_ColumnPropNameInRow="TotalTicketsAvailable" msprop:Generator_ColumnVarNameInTable="columnTotalTicketsAvailable" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesPercentage" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SalesPercentage" msprop:Generator_ColumnPropNameInTable="SalesPercentageColumn" msprop:Generator_ColumnPropNameInRow="SalesPercentage" msprop:Generator_ColumnVarNameInTable="columnSalesPercentage" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EVENT" msprop:Generator_RowClassName="EVENTRow" msprop:Generator_RowEvHandlerName="EVENTRowChangeEventHandler" msprop:Generator_RowDeletedName="EVENTRowDeleted" msprop:Generator_RowDeletingName="EVENTRowDeleting" msprop:Generator_RowEvArgName="EVENTRowChangeEvent" msprop:Generator_TablePropName="EVENT" msprop:Generator_RowChangedName="EVENTRowChanged" msprop:Generator_UserTableName="EVENT" msprop:Generator_RowChangingName="EVENTRowChanging" msprop:Generator_TableClassName="EVENTDataTable" msprop:Generator_TableVarName="tableEVENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="EventID" msprop:Generator_ColumnPropNameInTable="EventIDColumn" msprop:Generator_ColumnPropNameInRow="EventID" msprop:Generator_ColumnVarNameInTable="columnEventID" type="xs:int" />
+              <xs:element name="TotalAttendees" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotalAttendees" msprop:Generator_ColumnPropNameInTable="TotalAttendeesColumn" msprop:Generator_ColumnPropNameInRow="TotalAttendees" msprop:Generator_ColumnVarNameInTable="columnTotalAttendees" type="xs:int" minOccurs="0" />
+              <xs:element name="AttendanceRate" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AttendanceRate" msprop:Generator_ColumnPropNameInTable="AttendanceRateColumn" msprop:Generator_ColumnPropNameInRow="AttendanceRate" msprop:Generator_ColumnVarNameInTable="columnAttendanceRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FeedbackSummary" msdata:ReadOnly="true" msprop:Generator_UserColumnName="FeedbackSummary" msprop:Generator_ColumnPropNameInTable="FeedbackSummaryColumn" msprop:Generator_ColumnPropNameInRow="FeedbackSummary" msprop:Generator_ColumnVarNameInTable="columnFeedbackSummary" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable4" msprop:Generator_RowEvHandlerName="DataTable4RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable4RowDeleted" msprop:Generator_RowDeletingName="DataTable4RowDeleting" msprop:Generator_RowEvArgName="DataTable4RowChangeEvent" msprop:Generator_TablePropName="DataTable4" msprop:Generator_RowChangedName="DataTable4RowChanged" msprop:Generator_RowChangingName="DataTable4RowChanging" msprop:Generator_TableClassName="DataTable4DataTable" msprop:Generator_RowClassName="DataTable4Row" msprop:Generator_TableVarName="tableDataTable4" msprop:Generator_UserTableName="DataTable4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VendorID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="VendorID" msprop:Generator_ColumnPropNameInTable="VendorIDColumn" msprop:Generator_ColumnVarNameInTable="columnVendorID" msprop:Generator_UserColumnName="VendorID" type="xs:int" />
+              <xs:element name="VendorName" msprop:Generator_ColumnPropNameInRow="VendorName" msprop:Generator_ColumnPropNameInTable="VendorNameColumn" msprop:Generator_ColumnVarNameInTable="columnVendorName" msprop:Generator_UserColumnName="VendorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContractsFulfilled" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="ContractsFulfilled" msprop:Generator_ColumnPropNameInTable="ContractsFulfilledColumn" msprop:Generator_ColumnVarNameInTable="columnContractsFulfilled" msprop:Generator_UserColumnName="ContractsFulfilled" type="xs:int" minOccurs="0" />
+              <xs:element name="VendorRating" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="VendorRating" msprop:Generator_ColumnPropNameInTable="VendorRatingColumn" msprop:Generator_ColumnVarNameInTable="columnVendorRating" msprop:Generator_UserColumnName="VendorRating" type="xs:int" minOccurs="0" />
+              <xs:element name="MostFrequentService" msprop:Generator_ColumnPropNameInRow="MostFrequentService" msprop:Generator_ColumnPropNameInTable="MostFrequentServiceColumn" msprop:Generator_ColumnVarNameInTable="columnMostFrequentService" msprop:Generator_UserColumnName="MostFrequentService" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable5" msprop:Generator_RowEvHandlerName="DataTable5RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable5RowDeleted" msprop:Generator_RowDeletingName="DataTable5RowDeleting" msprop:Generator_RowEvArgName="DataTable5RowChangeEvent" msprop:Generator_TablePropName="DataTable5" msprop:Generator_RowChangedName="DataTable5RowChanged" msprop:Generator_RowChangingName="DataTable5RowChanging" msprop:Generator_TableClassName="DataTable5DataTable" msprop:Generator_RowClassName="DataTable5Row" msprop:Generator_TableVarName="tableDataTable5" msprop:Generator_UserTableName="DataTable5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SponsorID" msprop:Generator_ColumnPropNameInRow="SponsorID" msprop:Generator_ColumnPropNameInTable="SponsorIDColumn" msprop:Generator_ColumnVarNameInTable="columnSponsorID" msprop:Generator_UserColumnName="SponsorID" type="xs:int" />
+              <xs:element name="SponsorName" msprop:Generator_ColumnPropNameInRow="SponsorName" msprop:Generator_ColumnPropNameInTable="SponsorNameColumn" msprop:Generator_ColumnVarNameInTable="columnSponsorName" msprop:Generator_UserColumnName="SponsorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalContributions" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalContributions" msprop:Generator_ColumnPropNameInTable="TotalContributionsColumn" msprop:Generator_ColumnVarNameInTable="columnTotalContributions" msprop:Generator_UserColumnName="TotalContributions" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PartnershipSuccessRate" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="PartnershipSuccessRate" msprop:Generator_ColumnPropNameInTable="PartnershipSuccessRateColumn" msprop:Generator_ColumnVarNameInTable="columnPartnershipSuccessRate" msprop:Generator_UserColumnName="PartnershipSuccessRate" type="xs:double" minOccurs="0" />
+              <xs:element name="SponsorVisibilityMetrics" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="SponsorVisibilityMetrics" msprop:Generator_ColumnPropNameInTable="SponsorVisibilityMetricsColumn" msprop:Generator_ColumnVarNameInTable="columnSponsorVisibilityMetrics" msprop:Generator_UserColumnName="SponsorVisibilityMetrics" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:EventID" />
+    </xs:unique>
+    <xs:unique name="Organizers_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Organizers" />
+      <xs:field xpath="mstns:OrganizerID" />
+    </xs:unique>
+    <xs:unique name="EVENT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EVENT" />
+      <xs:field xpath="mstns:EventID" />
+    </xs:unique>
+    <xs:unique name="DataTable4_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable4" />
+      <xs:field xpath="mstns:VendorID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
